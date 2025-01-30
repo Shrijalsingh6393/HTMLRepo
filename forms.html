@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action=post> 
+        <label for="uname">Enter Name: </label>
+        <input type="text" name="uname" id="uname" size="10" maxlength="5" placeholder="Enter your name" value="Shrijal">
+    
+    <br><br>
+    <label for="pass">Enter Password: </label>
+    <input type="password" name="pass1" id="pass" placeholder="password should be of atleast 8 characters" required>
+   <br><br>
+
+        <label for="abc">Enter Email: </label>
+        <input type="email" name="abcd" id="abc" required>
+        <!-- required make the field compulsory to fill  -->
+        <br><br>
+
+        <label for="review">Write a movie review:</label><br>
+        <textarea name="review" id="review" rows="9" cols="40">This is a good movie.</textarea>
+        <!-- rows and cols helps to resize the review box -->
+        <br><br>
+
+        <label for="lang">Choose the language you know:</label>
+        <input type="checkbox" name="lang" id="hindi" value="Hin"><label for="hindi">Hindi</label>
+        <input type="checkbox" name="lang" id="lang" value="Eng" checked>English
+        <input type="checkbox" name="lang" id="lang" value="Span">Spanish
+        <input type="checkbox" name="lang" id="lang" value="Fr">French
+        <br><br>
+
+        <label for="radiobutton">Select your degree: </label>
+        <input type="radio" name="radiob" id="mba" value="mba"><label for="mba">MBA</label> 
+        <!-- label tag make text clickable -->
+         <!-- there should be same value for id attribute in input tag and for attribute in label tag -->
+        <input type="radio" name="radiob" id="bba" vaue="bba"><label for="bba">BBA</label>
+        <input type="radio" name="radiob" id="radiobutton" value="btech">Btech
+        <input type="radio" name="radiob" id="radiobutton" value="ma">MA
+        <br><br>
+
+        <label for="stateselect">Choose your state: </label>
+        <select name="state" id="stateselect" size="3" multiple>
+            <option value="choosest">Choose State</option>
+
+            <option value="punj">Punjab</option>
+            <option value="hary">Haryana</option>
+            <option value="up" selected>Uttar Pradesh</option>
+            <option value="Himanchal">HP</option>
+        </select>
+        <br><br>
+
+        <label for="selfile">Choose File</label>
+        <input type="file" name="selfile" id="selfile" accept="iamge/*">
+        <br><br>
+
+        <input type="Submit" id="submitform" value="Submit Form">
+        <input type="reset" name="resetform" id="resetform" value="Reset Form"><br>
+        <input type="image" name="ighui" id="uygu" src="abc\submit.png" width="100" height="80">
+    </form>
+</body>
+</html>

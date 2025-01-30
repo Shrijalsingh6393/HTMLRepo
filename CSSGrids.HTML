@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: pink;
+            border: 10px blue solid;
+            padding: 10px;
+            display:grid;
+            grid-template-columns: 30% auto 50%;
+            /* each no. of auto/spaces gives 1 separate column */
+            
+            grid-template-rows: 100px 200px 50px ; 
+        
+            /* grid-template: 150px 100px/auto 20% 40%; */
+            /* shorthand property for grid-template rows and grid-template coloums */
+        
+            
+            /* grid-row-gap: 30px;
+            grid-column-gap: 50px;  */
+
+            /* grid-gap: 10px 50px; */
+        }
+        .item{
+            background-color: lightgreen;
+            border: 2px green solid;
+            padding: 8px;
+        }
+
+        #i3{
+            grid-row-start: 2;           
+
+            grid-row-end: span 2; 
+
+            grid-column-start: 2; 
+            grid-column-end: span 2; 
+
+            
+            /* grid-row-end: 5; */
+            /* means span will complete before 5th row */
+
+            /* grid-row: 2/span 2;  */
+        } 
+
+        #i7{
+            /* grid-column-start: 2; */
+            /* grid-column-end: span 2;  */
+
+            grid-column: 4/span 2;
+            /* shorthand property */
+
+            /* span - merge */
+
+            
+         }  
+
+        #i9{
+            grid-area: 3/3/span 1/span2;
+            /* shorthand property for grid-row start,grid-row end,grid-colums start,grid-column end */
+        }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item" id="i3">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item" id="i7">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item" id="i9">Item 9</div>
+    </div>
+</body>
+</html>

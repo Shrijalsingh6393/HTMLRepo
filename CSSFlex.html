@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            /* padding: 30px; */
+            border: 2px red solid;
+            display: flex;
+
+            /* justify-content align the item horizontally */
+
+            /* justify-content: center; */
+            /* for center alignment */
+
+            /* justify-content: flex-end; */
+            /* for right alignment */
+
+            justify-content: flex-start;
+            /* for left alignment */
+
+            /* align-item align items vertically */
+
+            /* align-items: center; */
+            /* align item to center */
+
+            align-items: flex-start;
+            /* align item to top */
+
+            /* height: 500px; */
+            min-height: 500px;
+            /* adjust a/c to item size thus avoids overflow as we increase padding to items */
+
+            /* flex-direction: column; */
+
+            /* flex-direction: row-reverse; */
+
+            flex-direction: row;
+
+            flex-wrap: nowrap;
+
+            /* row-gap: 100px; */
+            column-gap: 20px;
+        }
+
+        .item{
+            background-color: lightcoral;
+            width: 50px;
+            height: 50px;
+            border: 2px purple solid;
+            color: green;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px;
+            /* text-align: center; */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-shrink: 0;
+            /* items will not shrink */
+
+            /* flex-grow: 1; */
+        }
+
+        #i1{
+            /* flex-grow: 5; */
+            /* flex-shrink: 5; */
+
+            /* align-self: flex-end; */
+            /* align-self: center; */
+
+            margin-right: auto;
+        }
+
+        @media(max-width:500px){
+            .container{
+                flex-wrap: wrap;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <!-- <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div> -->
+    </div>
+</body>
+</html>

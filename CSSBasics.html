@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Type Selector */
+        h3{
+            color:blueviolet;
+            background-color: aqua;
+            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* p{
+            color: green;
+        } */
+
+        /* a{
+            background-color: yellow;
+            color: maroon;
+        } */
+
+        /* Attribute Selector */
+
+        a[href="forms.html"]{
+            background-color: yellow;
+            color: maroon;
+        }
+
+        /* id selector */
+        /* '#' symbol is used to access id */
+        #p1{
+            color: green;
+        }
+
+        #p2{
+            color: blueviolet;
+        }
+
+        /* class selector */
+        /* '.' is used to access the class */
+        .c1{
+            color:maroon;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: grey;
+        }
+
+        /* universal selector */
+        *{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Pseudo selector */
+
+        h3:hover{
+            color:blueviolet;
+            background-color: aqua;
+            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        
+        /* Combinator Selector */
+
+        .d1 p{
+            color: cadetblue;
+        }
+
+        /* group selector*/
+        h2,h3{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: green">Front End Class-INT219 Course code</h1>
+    <!-- this is inline styling -->
+    <h2>Learning CSS and Javascript</h2>
+    <h3>Learning CSS and Javascript</h3>
+    <h4 class="c1">Learning CSS and Javascript</h4>
+    <!-- class can be same -->
+    <h5 class="c1">Learning CSS and Javascript</h5>
+    <h6 class="c1">Learning CSS and Javascript</h6>
+    <p id="p1">Para 1</p>
+    <!-- ids are unique -->
+    <p id="p2">Para 2</p>
+
+    <a href="forms.html">HTML Forms</a>
+    <a href="html_tables.html">HTML Tables</a>
+    <div  class="d1"><p id="p3">This is para in div</p></div>
+</body>
+</html>
+
+
+
+<!-- Type of Selectors -->
+
+<!-- (1)Type Selector 
+     (2)Attribute Selector 
+     (3)ID Selector
+     (4)Class Selector
+     (5)Universal Selector
+     (6)Pseudo Selector
+     (7)Combinator Selector -->
